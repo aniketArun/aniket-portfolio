@@ -49,7 +49,7 @@ export default function Hero() {
             {[1, 2, 3, 4, 5].map((i) => (
               <img
                 key={i}
-                src={`src/assets/poetic${i}.png`}
+                src={`/src/assets/poetic${i}.png`}
                 alt={`poem-${i}`}
                 className="h-48 w-72 md:h-64 md:w-96 object-cover rounded-xl shadow-lg flex-shrink-0"
               />
