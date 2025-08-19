@@ -32,10 +32,28 @@ export default function Projects() {
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7 }}
-                    className="text-4xl md:text-6xl font-bold text-center text-white mb-16"
+                    className="text-4xl md:text-6xl font-bold text-center text-white mb-16 flex items-center justify-center gap-3"
                 >
-                    My <span className="text-pink-400">Projects</span> 🚀
+                    {/* Rocket before text */}
+                    <motion.span
+                        whileHover={{
+                            x: [0, 600],   // fly across section (adjust width as needed)
+                            y: [0, -200, 200, 0], // up & down path
+                            rotate: [0, 45, -45, 0], // tilting
+                        }}
+                        transition={{
+                            duration: 2,
+                            ease: "easeInOut",
+                        }}
+                        className="inline-block cursor-pointer"
+                    >
+                        🚀
+                    </motion.span>
+
+                    My <span className="text-pink-400">Projects</span>
                 </motion.h2>
+
+
 
                 {/* Projects Grid */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -73,8 +91,27 @@ export default function Projects() {
                             </div>
 
                         </motion.div>
+
                     ))}
                 </div>
+                {/* + Many More */}
+                <motion.p
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.7, delay: 0.5 }}
+                    className="mt-12 text-center text-2xl md:text-3xl font-extrabold tracking-wide 
+               text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-500 flex items-center justify-center gap-2"
+                >
+                    + Many More
+                    <motion.span
+                        whileHover={{ y: -40, x: 20, rotate: -45, opacity: 0 }}
+                        transition={{ duration: 0.6, ease: "easeInOut" }}
+                        className="inline-block cursor-pointer"
+                    >
+                        🚀
+                    </motion.span>
+                </motion.p>
+
             </div>
         </section>
     )
