@@ -13,7 +13,7 @@ export default function AboutMe() {
       >
         {/* Profile / Avatar */}
         <motion.img
-          src="/your-photo.png" // apna photo ya avatar
+          src="/favicon.jpg" // apna photo ya avatar
           alt="Aniket"
           className="w-40 h-40 md:w-56 md:h-56 rounded-full object-cover border-4 border-purple-500 shadow-lg"
           whileHover={{ scale: 1.05 }}
