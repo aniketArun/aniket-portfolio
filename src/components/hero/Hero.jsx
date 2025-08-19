@@ -135,6 +135,7 @@ export default function Hero() {
               scale: 1.08,
               boxShadow: "0px 0px 20px rgba(236,72,153,0.8)",
             }}
+            onClick={() => navigate("/poems")}
             whileTap={{ scale: 0.95 }}
             className="px-6 py-3 rounded-2xl bg-gradient-to-r from-pink-500 via-purple-600 to-indigo-500 text-white font-semibold shadow-md transition-transform"
           >
