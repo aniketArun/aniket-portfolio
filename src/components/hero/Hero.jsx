@@ -105,44 +105,44 @@ export default function Hero() {
               onClick={() => setIndex(i)}
               whileHover={{ scale: 1.3 }}
               className={`h-3 w-3 rounded-full transition-all duration-300 ${i === index
-                  ? "bg-gradient-to-r from-pink-500 to-purple-500 shadow-lg scale-125"
-                  : "bg-gray-600"
+                ? "bg-gradient-to-r from-pink-500 to-purple-500 shadow-lg scale-125"
+                : "bg-gray-600"
                 }`}
             />
           ))}
         </div>
-      {/* Text Below Carousel */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.3 }}
-        className="mt-10 flex flex-col items-center gap-4"
+        {/* Text Below Carousel */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="mt-10 flex flex-col items-center gap-4"
         >
-        <motion.p
-          className="text-lg md:text-xl font-semibold text-center text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 cursor-pointer"
-          whileHover={{
-            scale: 1.1,
-            textShadow: "0px 0px 20px rgba(255,105,180,0.8)",
-          }}
+          <motion.p
+            className="text-lg md:text-xl font-semibold text-center text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 cursor-pointer"
+            whileHover={{
+              scale: 1.1,
+              textShadow: "0px 0px 20px rgba(255,105,180,0.8)",
+            }}
           >
-          💖 Love my words, want to read more poems?
-        </motion.p>
+            💖 Love my words, want to read more poems?
+          </motion.p>
 
-        {/* Button */}
-        <motion.a
-          href="/poems" // 👉 yaha tumhari Poems page ka route
-          whileHover={{
-            scale: 1.08,
-            boxShadow: "0px 0px 20px rgba(236,72,153,0.8)",
-          }}
-          whileTap={{ scale: 0.95 }}
-          className="px-6 py-3 rounded-2xl bg-gradient-to-r from-pink-500 via-purple-600 to-indigo-500 text-white font-semibold shadow-md transition-transform"
+          {/* Button */}
+          <motion.a
+            href="/poems"
+            whileHover={{
+              scale: 1.08,
+              boxShadow: "0px 0px 20px rgba(236,72,153,0.8)",
+            }}
+            whileTap={{ scale: 0.95 }}
+            className="px-6 py-3 rounded-2xl bg-gradient-to-r from-pink-500 via-purple-600 to-indigo-500 text-white font-semibold shadow-md transition-transform"
           >
-          ✨ Explore Poems →
-        </motion.a>
-      </motion.div>
+            ✨ Explore Poems →
+          </motion.a>
+        </motion.div>
 
-          </div>
+      </div>
     </section>
   )
 }
