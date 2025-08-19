@@ -16,3 +16,10 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "barbharti";
+  src: url("/src/assets/fonts/BalBharatiDev05.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
