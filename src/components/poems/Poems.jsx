@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
-import NavbarDefault from "../navbar/NavbarDefault";
+import PoemsNavbar from "../navbar/PoemsNavbar";
 
 export default function Poems() {
     const poems = [
@@ -116,7 +116,7 @@ unique असलो जरी तिच्यासाठी मी..
 
     return (
         <>
-            <NavbarDefault />
+            <PoemsNavbar />
             <div className="min-h-screen flex flex-col justify-center items-center px-4 py-10 bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white">
                 {/* Heading */}
                 <motion.h1

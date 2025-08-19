@@ -33,9 +33,8 @@ export default function NavbarDefault() {
   return (
     <header className="fixed left-0 right-0 top-0 z-50 flex justify-center px-4 py-3">
       <nav
-        className={`relative w-full max-w-6xl rounded-2xl border border-white/10 bg-white/60 backdrop-blur-xl transition-all dark:border-white/10 dark:bg-neutral-900/60 ${
-          isScrolled ? "shadow-xl ring-1 ring-black/5 dark:ring-white/5" : ""
-        }`}
+        className={`relative w-full max-w-6xl rounded-2xl border border-white/10 bg-white/60 backdrop-blur-xl transition-all dark:border-white/10 dark:bg-neutral-900/60 ${isScrolled ? "shadow-xl ring-1 ring-black/5 dark:ring-white/5" : ""
+          }`}
         aria-label="Main navigation"
       >
         <div className="flex items-center justify-between px-4 py-3 sm:px-6">
@@ -46,44 +45,48 @@ export default function NavbarDefault() {
               </svg>
             </span>
             <span className="bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 bg-clip-text text-lg font-extrabold tracking-tight text-transparent dark:from-white dark:via-neutral-200 dark:to-white">
-              Aniket
+              Aniket P.
             </span>
             <span className="ml-1 hidden text-sm text-neutral-600 transition-colors group-hover:text-neutral-900 dark:text-neutral-400 dark:group-hover:text-white sm:inline">
-              • Developer
+              • Full Stack Developer
             </span>
           </a>
 
           <div className="hidden items-center gap-1 md:flex">
             {links.map((link) => (
-              <NavItem key={link.href} href={link.href} onClick={() => setOpen(false)}>
+              <NavItem
+                key={link.href}
+                href={link.href}
+                onClick={() => setOpen(false)}
+              >
                 {link.label}
               </NavItem>
             ))}
 
             <a
-              href="#contact"
+              href="#hire-me"
               className="ml-2 inline-flex items-center rounded-xl border border-black/5 bg-gradient-to-r from-gray-900 to-black px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:translate-y-[-1px] hover:shadow-md active:translate-y-0 dark:border-white/10"
             >
               <span>Hire Me</span>
             </a>
 
-            <button
+            {/* <button
               onClick={() => setIsDark((d) => !d)}
               aria-label="Toggle theme"
               className="ml-2 inline-flex h-10 w-10 items-center justify-center rounded-xl border border-black/5 bg-white/70 text-neutral-900 shadow-sm transition hover:bg-white dark:border-white/10 dark:bg-neutral-800 dark:text-white"
             >
               <ThemeIcon isDark={isDark} />
-            </button>
+            </button> */}
           </div>
 
           <div className="flex items-center gap-2 md:hidden">
-            <button
+            {/* <button
               onClick={() => setIsDark((d) => !d)}
               aria-label="Toggle theme"
               className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-black/5 bg-white/70 text-neutral-900 shadow-sm transition hover:bg-white dark:border-white/10 dark:bg-neutral-800 dark:text-white"
             >
               <ThemeIcon isDark={isDark} />
-            </button>
+            </button> */}
             <button
               onClick={() => setOpen((o) => !o)}
               aria-expanded={open}
@@ -155,9 +158,8 @@ function NavItem({ href, children, onClick }) {
     >
       <span>{children}</span>
       <span
-        className={`absolute inset-x-2 -bottom-0.5 h-[2px] origin-left scale-x-0 rounded-full bg-gradient-to-r from-fuchsia-500 via-pink-500 to-rose-500 transition-transform duration-300 ease-out group-hover:scale-x-100 ${
-          active ? "scale-x-100" : ""
-        }`}
+        className={`absolute inset-x-2 -bottom-0.5 h-[2px] origin-left scale-x-0 rounded-full bg-gradient-to-r from-fuchsia-500 via-pink-500 to-rose-500 transition-transform duration-300 ease-out group-hover:scale-x-100 ${active ? "scale-x-100" : ""
+          }`}
       />
     </a>
   )
@@ -167,19 +169,16 @@ function BurgerIcon({ open }) {
   return (
     <span className="relative block h-4 w-5">
       <span
-        className={`absolute left-0 top-0 h-[2px] w-full rounded-full bg-current transition-transform duration-300 ${
-          open ? "translate-y-[7px] rotate-45" : ""
-        }`}
+        className={`absolute left-0 top-0 h-[2px] w-full rounded-full bg-current transition-transform duration-300 ${open ? "translate-y-[7px] rotate-45" : ""
+          }`}
       />
       <span
-        className={`absolute left-0 top-1/2 h-[2px] w-full -translate-y-1/2 rounded-full bg-current transition-opacity duration-300 ${
-          open ? "opacity-0" : "opacity-100"
-        }`}
+        className={`absolute left-0 top-1/2 h-[2px] w-full -translate-y-1/2 rounded-full bg-current transition-opacity duration-300 ${open ? "opacity-0" : "opacity-100"
+          }`}
       />
       <span
-        className={`absolute bottom-0 left-0 h-[2px] w-full rounded-full bg-current transition-transform duration-300 ${
-          open ? "-translate-y-[7px] -rotate-45" : ""
-        }`}
+        className={`absolute bottom-0 left-0 h-[2px] w-full rounded-full bg-current transition-transform duration-300 ${open ? "-translate-y-[7px] -rotate-45" : ""
+          }`}
       />
     </span>
   )

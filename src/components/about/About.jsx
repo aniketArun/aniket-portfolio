@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 export default function AboutMe() {
   return (
-    <section className="w-full min-h-screen bg-gradient-to-b from-gray-900 via-black to-gray-900 flex items-center justify-center px-6 py-16">
+    <section id="about" className="w-full min-h-screen bg-gradient-to-b from-gray-900 via-black to-gray-900 flex items-center justify-center px-6 py-16">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}

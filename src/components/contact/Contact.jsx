@@ -5,7 +5,7 @@ import { Mail, Linkedin, Github, Coffee } from "lucide-react"
 
 export default function Contact() {
   return (
-    <section className="relative w-full min-h-screen bg-gradient-to-b from-black via-gray-900 to-black text-white flex flex-col items-center justify-center px-6 py-20">
+    <section id="contact" className="relative w-full min-h-screen bg-gradient-to-b from-black via-gray-900 to-black text-white flex flex-col items-center justify-center px-6 py-20">
       
       {/* Glowing background effect */}
       <div className="absolute inset-0 -z-10 bg-gradient-to-tr from-purple-700/30 via-pink-500/20 to-transparent blur-3xl" />

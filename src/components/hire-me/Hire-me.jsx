@@ -19,7 +19,7 @@ export default function HireMe() {
   }
 
   return (
-    <section className="relative w-full min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white flex flex-col items-center justify-center px-6 py-20">
+    <section id="hire-me" className="relative w-full min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white flex flex-col items-center justify-center px-6 py-20">
       
       {/* Background glow */}
       <div className="absolute inset-0 -z-10 bg-gradient-to-tr from-pink-500/30 via-purple-700/20 to-transparent blur-3xl" />

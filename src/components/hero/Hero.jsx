@@ -2,12 +2,12 @@
 
 import { motion, AnimatePresence } from "framer-motion"
 import { useEffect, useState } from "react"
-
+import { useNavigate } from 'react-router-dom';
 const poems = [1, 2, 3, 4, 5]
 
 export default function Hero() {
   const [index, setIndex] = useState(0)
-
+  const navigate = useNavigate();
   // Auto-play carousel
   useEffect(() => {
     const timer = setInterval(() => {
@@ -17,7 +17,7 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className="relative w-full min-h-[100vh] bg-gradient-to-b from-black via-gray-900 to-black text-white overflow-hidden">
+    <section id="home" className="relative w-full min-h-[100vh] bg-gradient-to-b from-black via-gray-900 to-black text-white overflow-hidden">
       {/* Hero Text */}
       <div className="sticky top-0 h-screen flex flex-col items-center justify-center text-center px-4 md:px-8">
         <motion.h1
@@ -130,14 +130,14 @@ export default function Hero() {
 
           {/* Button */}
           <motion.a
-            href="/poems"
             whileHover={{
               scale: 1.08,
               boxShadow: "0px 0px 20px rgba(236,72,153,0.8)",
             }}
             onClick={() => navigate("/poems")}
             whileTap={{ scale: 0.95 }}
-            className="px-6 py-3 rounded-2xl bg-gradient-to-r from-pink-500 via-purple-600 to-indigo-500 text-white font-semibold shadow-md transition-transform"
+            className="px-6 py-3 rounded-2xl bg-gradient-to-r from-pink-500 via-purple-600 to-indigo-500 text-white font-semibold shadow-md transition-transform hover:cursor-pointer"
+
           >
             ✨ Explore Poems →
           </motion.a>
