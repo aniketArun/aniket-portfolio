@@ -7,19 +7,19 @@ const projects = [
         title: "Job Portal",
         desc: "A full-stack platform with React, Django REST, and JWT for posting, applying, and managing jobs.",
         tech: ["React", "Django", "Material UI", "JWT"],
-        img: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f", // replace with your screenshot
+        img: "/jobapp.png", // replace with your screenshot
     },
     {
-        title: "Portfolio Website",
-        desc: "A sleek and responsive personal portfolio built with React & Vite, styled with custom CSS.",
-        tech: ["React", "Vite", "Tailwind"],
-        img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+        title: "YDF Mobile App",
+        desc: "High performance mobile application designed to collect scholarship applications based on moodle.",
+        tech: ["Java", "Android", "Moodle LMS"],
+        img: "/ydf_mobile_app.png",
     },
     {
-        title: "Coupon System",
-        desc: "REST API powered coupon management system with Laravel, tracking usage and analytics.",
-        tech: ["Laravel", "MySQL", "REST API"],
-        img: "https://images.unsplash.com/photo-1556761175-4b46a572b786",
+        title: "LactVivechaka",
+        desc: "Patented Ecosystem with ML Powered analytics, for better milk collection",
+        tech: ["Next.js", "TypeScript", "REST API", "FireStore", "Flask"],
+        img: "/lactvivechaka.png",
     },
 ]
 
