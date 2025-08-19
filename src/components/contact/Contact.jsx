@@ -34,7 +34,7 @@ export default function Contact() {
       {/* Interactive Buttons */}
       <div className="flex flex-wrap gap-6 justify-center">
         <a
-          href="mailto:youremail@example.com"
+          href="mailto:aniketpen8478@gmail.com"
           className="flex items-center gap-2 px-6 py-3 rounded-2xl bg-gradient-to-r from-purple-600 to-pink-500 
           text-white font-medium shadow-lg hover:scale-105 transition-transform"
         >
@@ -42,7 +42,7 @@ export default function Contact() {
         </a>
 
         <a
-          href="https://linkedin.com/in/yourprofile"
+          href="https://linkedin.com/in/aniket-pendhari"
           target="_blank"
           className="flex items-center gap-2 px-6 py-3 rounded-2xl bg-gradient-to-r from-blue-600 to-cyan-500 
           text-white font-medium shadow-lg hover:scale-105 transition-transform"
@@ -51,7 +51,7 @@ export default function Contact() {
         </a>
 
         <a
-          href="https://github.com/yourgithub"
+          href="https://github.com/aniketArun"
           target="_blank"
           className="flex items-center gap-2 px-6 py-3 rounded-2xl bg-gradient-to-r from-gray-800 to-gray-600 
           text-white font-medium shadow-lg hover:scale-105 transition-transform"
