@@ -7,30 +7,33 @@ import Projects from './components/project/Project'
 import Contact from './components/contact/Contact'
 import HireMe from './components/hire-me/Hire-me'
 import Poems from "./components/poems/Poems"
-
+import toast, { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
-    <Routes>
-      {/* Home Page */}
-      <Route
-        path="/"
-        element={
-          <>
-            <NavbarDefault />
-            <Hero />
-            <AboutMe />
-            <Skills />
-            <Projects />
-            <Contact />
-            <HireMe />
-          </>
-        }
-      />
+    <>
+      <Routes>
+        {/* Home Page */}
+        <Route
+          path="/"
+          element={
+            <>
+              <NavbarDefault />
+              <Hero />
+              <AboutMe />
+              <Skills />
+              <Projects />
+              <Contact />
+              <HireMe />
+            </>
+          }
+        />
 
-      {/* Poems Page */}
-      <Route path="/poems" element={<Poems />} />
-    </Routes>
+        {/* Poems Page */}
+        <Route path="/poems" element={<Poems />} />
+      </Routes>
+      <Toaster />
+    </>
   )
 }
 
