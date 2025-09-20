@@ -34,13 +34,14 @@ export default function AboutMe() {
             shaping thoughts into verses — because sometimes,  
             emotions deserve rhythm, not logic.
           </p>
-          <motion.button
+          <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-500 rounded-xl shadow-lg text-white font-medium"
+            href="#contact"
           >
             Let’s Connect 🚀
-          </motion.button>
+          </motion.a>
         </div>
       </motion.div>
     </section>
